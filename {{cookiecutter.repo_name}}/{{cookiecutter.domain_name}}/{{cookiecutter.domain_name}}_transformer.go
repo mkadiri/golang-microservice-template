@@ -1,4 +1,4 @@
-package {{cookiecutter.repo_name}}
+package {{cookiecutter.domain_name}}
 
 import (
 	"encoding/json"
