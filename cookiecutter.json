@@ -1,4 +1,8 @@
 {
   "repo_name": "search",
-  "domain_name": "user"
+  "domain_name": "hello",
+  "domain_name_plural": "hellos",
+  "domain_name_title": "Hello",
+  "dockerhub_org": "mkadiri",
+  "mysql_database": "mkadiri_golang_microservice"
 }
