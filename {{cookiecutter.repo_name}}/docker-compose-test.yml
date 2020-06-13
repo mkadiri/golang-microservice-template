@@ -1,6 +1,6 @@
 version: '3.5'
 services:
-    golang-microservice-tester:
+    {{cookiecutter.repo_name}}-tester:
         image: mkadiri/golang-tester
         container_name: mkadiri-golang-tester
         environment:
@@ -10,7 +10,7 @@ services:
             - MYSQL_PASSWORD=root
             - MYSQL_DATABASE=mkadiri_golang_microservice_test
             - CORS_ALLOWED_ORIGINS=*
-            - PROJECT_URL=github.com/mkadiri/golang-microservice
+            - PROJECT_URL={{cookiecutter.repo_base_name})/{{cookiecutter.repo_name}}
         volumes:
             - ./database/migrations:/migrations
             - ./database/dev-fixtures:/dev-fixtures

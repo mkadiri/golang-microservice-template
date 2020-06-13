@@ -1,7 +1,7 @@
 package {{cookiecutter.domain_name}}
 
 import (
-	"github.com/mkadiri/golang-microservice/router"
+	"{{cookiecutter.repo_base_name})/{{cookiecutter.repo_name}}/router"
 	"net/http"
 )
 
