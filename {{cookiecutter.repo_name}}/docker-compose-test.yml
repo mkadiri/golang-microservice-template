@@ -10,7 +10,7 @@ services:
             - MYSQL_PASSWORD=root
             - MYSQL_DATABASE=mkadiri_golang_microservice_test
             - CORS_ALLOWED_ORIGINS=*
-            - PROJECT_URL={{cookiecutter.repo_base_name})/{{cookiecutter.repo_name}}
+            - PROJECT_URL={{cookiecutter.repo_base_name}}/{{cookiecutter.repo_name}}
         volumes:
             - ./database/migrations:/migrations
             - ./database/dev-fixtures:/dev-fixtures

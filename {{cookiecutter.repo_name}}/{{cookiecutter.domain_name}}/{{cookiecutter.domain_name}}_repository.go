@@ -1,7 +1,7 @@
 package {{cookiecutter.domain_name}}
 
 import (
-	"{{cookiecutter.repo_base_name})/{{cookiecutter.repo_name}}/database"
+	"{{cookiecutter.repo_base_name}}/{{cookiecutter.repo_name}}/database"
 )
 
 type UserRepository struct {}

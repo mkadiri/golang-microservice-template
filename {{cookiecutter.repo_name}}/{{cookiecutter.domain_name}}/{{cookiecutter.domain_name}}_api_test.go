@@ -3,8 +3,8 @@ package {{cookiecutter.domain_name}}
 import (
 	"bytes"
 	"encoding/json"
-	"{{cookiecutter.repo_base_name})/{{cookiecutter.repo_name}}/database"
-	"{{cookiecutter.repo_base_name})/{{cookiecutter.repo_name}}/router"
+	"{{cookiecutter.repo_base_name}}/{{cookiecutter.repo_name}}/database"
+	"{{cookiecutter.repo_base_name}}/{{cookiecutter.repo_name}}/router"
 	"net/http"
 	"testing"
 	"time"

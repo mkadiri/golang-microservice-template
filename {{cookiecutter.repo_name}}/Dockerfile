@@ -5,9 +5,9 @@ ENV \
     CGO_ENABLED=0
 
 RUN mkdir -p /go-bin
-COPY . /go/src/{{cookiecutter.repo_base_name})/{{cookiecutter.repo_name}}
+COPY . /go/src/{{cookiecutter.repo_base_name}}/{{cookiecutter.repo_name}}
 
-RUN cd /go/src/{{cookiecutter.repo_base_name})/{{cookiecutter.repo_name}} && \
+RUN cd /go/src/{{cookiecutter.repo_base_name}}/{{cookiecutter.repo_name}} && \
     go get && \
     go build -v -o /go-bin/app
 

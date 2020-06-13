@@ -2,7 +2,7 @@ BASE_DIRECTORY=${PWD}
 GOLANG_BUILDER=mkadiri/golang-builder
 GOLANG_TESTER=mkadiri/golang-tester
 GOLANG_MICROSERVICE_IMAGE=mkadiri/{{cookiecutter.repo_name}}
-PROJECT_URL={{cookiecutter.repo_base_name})/{{cookiecutter.repo_name}}
+PROJECT_URL={{cookiecutter.repo_base_name}}/{{cookiecutter.repo_name}}
 
 build:
 	docker build -t ${GOLANG_MICROSERVICE_IMAGE} .

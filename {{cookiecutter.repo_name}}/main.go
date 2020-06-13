@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 	"github.com/gorilla/handlers"
-	"{{cookiecutter.repo_base_name})/{{cookiecutter.repo_name}}/healthcheck"
-	"{{cookiecutter.repo_base_name})/{{cookiecutter.repo_name}}/router"
-	"{{cookiecutter.repo_base_name})/{{cookiecutter.repo_name}}/{{cookiecutter.repo_name}}"
+	"{{cookiecutter.repo_base_name}}/{{cookiecutter.repo_name}}/healthcheck"
+	"{{cookiecutter.repo_base_name}}/{{cookiecutter.repo_name}}/router"
+	"{{cookiecutter.repo_base_name}}/{{cookiecutter.repo_name}}/{{cookiecutter.repo_name}}"
 	"log"
 	"net/http"
 	"os"
