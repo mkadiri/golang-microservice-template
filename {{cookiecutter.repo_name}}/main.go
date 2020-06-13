@@ -42,7 +42,6 @@ func getCorsHandler() func(http.Handler) http.Handler {
 }
 
 func initRouter()  {
-	da
 	router.Init()
 	{{cookiecutter.repo_name}}.InitRouter()
 	healthcheck.InitRouter()
