@@ -5,7 +5,7 @@ import (
 	"github.com/gorilla/handlers"
 	"{{cookiecutter.repo_base_name}}/{{cookiecutter.repo_name}}/healthcheck"
 	"{{cookiecutter.repo_base_name}}/{{cookiecutter.repo_name}}/router"
-	"{{cookiecutter.repo_base_name}}/{{cookiecutter.repo_name}}/{{cookiecutter.repo_name}}"
+	"{{cookiecutter.repo_base_name}}/{{cookiecutter.repo_name}}/{{cookiecutter.domain_name}}"
 	"log"
 	"net/http"
 	"os"
@@ -43,6 +43,6 @@ func getCorsHandler() func(http.Handler) http.Handler {
 
 func initRouter()  {
 	router.Init()
-	{{cookiecutter.repo_name}}.InitRouter()
+	{{cookiecutter.domain_name}}.InitRouter()
 	healthcheck.InitRouter()
 }
