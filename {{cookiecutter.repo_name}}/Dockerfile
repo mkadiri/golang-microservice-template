@@ -34,7 +34,7 @@ RUN chmod -R +x /dev-fixtures
 
 EXPOSE 8000
 
-COPY docker/startup.sh /startup.sh
+COPY startup.sh /startup.sh
 RUN chmod +x /startup.sh
 
 CMD ["/startup.sh"]

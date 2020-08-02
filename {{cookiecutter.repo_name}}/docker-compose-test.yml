@@ -1,14 +1,14 @@
 version: '3.5'
 services:
-    {{cookiecutter.repo_name}}-tester:
-        image: {{cookiecutter.dockerhub_name}}/{{cookiecutter.repo_name}}-tester
-        container_name: {{cookiecutter.repo_name}}-tester
+    golang-tester:
+        image: mkadiri/golang-tester
+        container_name: golang-tester
         environment:
             - MYSQL_HOST=mysql
             - MYSQL_PORT=3306
             - MYSQL_USER=root
             - MYSQL_PASSWORD=root
-            - MYSQL_DATABASE=mkadiri_golang_microservice_test
+            - MYSQL_DATABASE=golang_test
             - CORS_ALLOWED_ORIGINS=*
             - PROJECT_URL={{cookiecutter.repo_base_name}}/{{cookiecutter.repo_name}}
         volumes:
