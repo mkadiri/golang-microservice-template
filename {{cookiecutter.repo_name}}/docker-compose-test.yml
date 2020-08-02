@@ -17,7 +17,7 @@ services:
             - ~/go:/go
         restart: always
     mysql:
-        image: mysql
+        image: mysql:latest
         container_name: mkadiri-mysql
         ports:
             - 3307:3306
