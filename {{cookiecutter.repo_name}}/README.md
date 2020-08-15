@@ -17,6 +17,7 @@ to access service to go
 `http://localhost:8181`
     
 #### API endpoints
+- GET http://localhost:8181/{{cookiecutter.domain_name}}
 
 
 #### DEV mode

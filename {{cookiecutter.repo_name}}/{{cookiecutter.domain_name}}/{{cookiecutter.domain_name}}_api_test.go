@@ -19,7 +19,7 @@ var {{cookiecutter.domain_name_plural}} = []{{cookiecutter.domain_name_title}}{
 	{Id: 3, FirstName: "jeremy", LastName: "renner", DateOfBirth: dob},
 }
 
-func TestAddUsers(t *testing.T) {
+func TestAdd{{cookiecutter.domain_name_plural}}(t *testing.T) {
 	router.Init()
 	InitRouter()
 
@@ -38,7 +38,7 @@ func TestAddUsers(t *testing.T) {
 	router.ApiTestHelper{}.CheckBodyEqualsJson(t, modulesJson, response.Body)
 }
 
-func TestGetUsers(t *testing.T) {
+func TestGet{{cookiecutter.domain_name_plural}}(t *testing.T) {
 	router.Init()
 	InitRouter()
 

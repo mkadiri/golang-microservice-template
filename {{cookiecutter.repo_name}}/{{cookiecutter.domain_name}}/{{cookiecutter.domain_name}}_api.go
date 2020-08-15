@@ -12,7 +12,7 @@ func InitRouter()  {
 	router.Add("/{{cookiecutter.domain_name_plural}}", UserApi{}.AddUsers, "PUT")
 }
 
-func (UserApi) GetUsers(w http.ResponseWriter, r *http.Request) {
+func (UserApi) Get{{cookiecutter.domain_name_plural}}(w http.ResponseWriter, r *http.Request) {
 	{{cookiecutter.domain_name_plural}}, err := UserRepository{}.GetUsers()
 
 	if err != nil {
@@ -25,7 +25,7 @@ func (UserApi) GetUsers(w http.ResponseWriter, r *http.Request) {
 	response.Write(w)
 }
 
-func (UserApi) AddUsers(w http.ResponseWriter, r *http.Request) {
+func (UserApi) Add{{cookiecutter.domain_name_plural}}(w http.ResponseWriter, r *http.Request) {
 	adaptedUsers, err := RequestToUsers(r)
 
 	if err != nil {
