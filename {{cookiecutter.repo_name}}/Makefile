@@ -9,8 +9,8 @@ build:
 
 test:
 	docker-compose -f docker-compose-test.yml up -d && \
-  docker logs -f golang-tester && \
-  docker rm -f golang-tester && \
+	docker logs -f golang-tester && \
+	docker rm -f golang-tester && \
 	docker rm -f mysql
 
 run:
